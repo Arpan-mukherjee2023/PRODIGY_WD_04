@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1 id="heading">Portfolio</h1>
+        <div class="menu-links">
+            <a href="#home-section" onclick="delete_menu(this)">Home</a>
+            <a href="#about-section" onclick="delete_menu(this)">About</a>
+            <a href="#skills-section" onclick="delete_menu(this)">Skills</a>
+            <a href="#education-section" onclick="delete_menu(this)">Education</a>
+            <a href="#project-section" onclick="delete_menu(this)">Projects</a>
+            <a href="#contact-section" onclick="delete_menu(this)">Contact</a>
+        </div>
+        <div class="cont" onclick="handleThis(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+    <section class="head-sec" id="home-section">
+        <div id="text-sec">
+            <div class="typewriter">
+                <h1><span style="color: #277dff;">console</span>.<span style="color: #ffc200;">log("</span><span
+                        style="color: white;">Hello World!</span><span style="color: #ffc200;">");</span></h1>
+            </div>
+            <h1>I'm Arpan Mukherjee</h1>
+            <h3>I am into <br><span>Web Development</span></h3>
+            <a id="about-me">Download CV</a>
+            <div class="important-buttons">
+                <a href="#" class="imp-btn"><img src="Images/icons8-linkedin-24.png"></a>
+                <a href="https://github.com/Arpan-mukherjee2023" class="imp-btn" target="_blank"><img src="Images/icons8-github-24.png"></a>
+                <a href="#" class="imp-btn"><img src="Images/icons8-instagram-24.png"></a>
+                <a href="#" class="imp-btn"><img src="Images/icons8-facebook-24.png"></a>
+            </div>
+        </div>
+        <div id="img-sec">
+            <img src="Images/my-image.jpeg">
+        </div>
+    </section>
+
+    <section class="about" id="about-section">
+        <h1>About Me</h1>
+        <p>Hello! I'm Arpan Mukherjee, a passionate and dedicated web developer with a flair for creating dynamic and
+            user-friendly websites. I have honed my skills in front-end and back-end development, always staying at the
+            forefront of the latest technologies and best practices.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>My Journey</h3>
+                <p>My journey into web development began with a curiosity about how websites work and a desire to bring
+                    creative ideas to life online. Over the years, I've transformed this curiosity into a robust skill
+                    set, mastering languages like HTML, CSS, JavaScript, and frameworks such as React, Angular, and
+                    Vue.js. On the back end, I excel in working with Node.js, PHP, and Python, ensuring that my websites
+                    are not only beautiful but also functional and efficient.</p>
+            </div>
+            <div class="card">
+                <h3>My Approach</h3>
+                <p>I believe in a user-centric approach to web development. Every project I undertake starts with a deep
+                    understanding of the client's needs and the end user's expectations. This ensures that the final
+                    product is not only visually appealing but also intuitive and seamless to use. I pride myself on my
+                    attention to detail, problem-solving abilities, and a commitment to delivering high-quality work on
+                    time.</p>
+            </div>
+        </div>
+
+        <p>I'm always excited to take on new challenges and collaborate with like-minded individuals and businesses. If
+            you have a project in mind or just want to chat about web development, feel free to reach out!</p>
+    </section>
+
+    <section class="skills" id="skills-section">
+        <h1>My Skills</h1>
+        <div  class="skill-cards">
+            <div class="skill-card">
+                <img src="Images/HTML5.png">
+            </div>
+            <div class="skill-card">
+                <img src="Images/CSS3.png">
+            </div>
+            <div class="skill-card">
+                <img src="Images/JavaScript.png">
+            </div>
+            <div class="skill-card">
+                <img src="Images/python.png">
+            </div>
+            <div class="skill-card">
+                <img src="Images/react.png">
+            </div>
+            <div class="skill-card">
+                <img src="Images/GIT.png">
+            </div>
+            <div class="skill-card">
+                <img src="Images/mysql.png">
+            </div>
+        </div>
+    </section>
+    <h1 class="head" id="education-section">Education</h1>
+    <section class="education" >
+        <div class="school">
+            <div class="year">2022-Present</div>
+            <div class="description">
+                <h1>Bachelor of Computer Application</h1>
+                <h3>Techno Main SaltLake</h3>
+            </div>
+        </div>
+        <div class="school">
+            <div class="year">2022</div>
+            <div class="description">
+                <h1>WBCHSE</h1>
+                <h3>Serampore Union Institution</h3>
+            </div>
+        </div>
+        <div class="school">
+            <div class="year">2020</div>
+            <div class="description">
+                <h1>WBBSE</h1>
+                <h3>Chatra Nandalal Institution</h3>
+            </div>
+        </div>
+    </section>
+    <h1 class="head" id="project-section">Projects</h1>
+    <section class="projects">
+        <div class="project">
+            <img src="Images/calculator.png">
+            <h2>Calculator</h2>
+            <a href="https://github.com/Arpan-mukherjee2023/Calculator" class="btn-link" target="_blank">Go to Repo</a>
+        </div>
+        <div class="project">
+            <img src="Images/stopwatch.png">
+            <h2>Stopwatch</h2>
+            <a href="https://github.com/Arpan-mukherjee2023/PRODIGY_WD_02" class="btn-link" target="_blank">Go to Repo</a>
+        </div>
+        <div class="project">
+            <img src="Images/todolist.png">
+            <h2>To do List</h2>
+            <a href="https://github.com/Arpan-mukherjee2023/OctanetProject2" class="btn-link" target="_blank">Go to Repo</a>
+        </div>
+        <div class="project">
+            <img src="Images/weatherApp.png">
+            <h2>Weather App</h2>
+            <a href="https://github.com/Arpan-mukherjee2023/PRODIGY_WD_05" class="btn-link" target="_blank">Go to Repo</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact-section">
+        <div class="location">
+            &#9742 +91 1089878987<br>
+            &#9993 getuser4567@gmail.com<br>
+            &#9906 Hudson Road, London, UK
+        </div>
+        <div id="send-mail">
+            <input type="email" id="email" placeholder="Enter Email">
+            <textarea type="text" id="text" placeholder="Write Something" rows="4" cols="30"></textarea>
+            <button id="send-btn">Send</button>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+
+</html>
